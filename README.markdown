@@ -46,11 +46,11 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
   
     mkdir ~/.ssh
   
-  на локальном компьютере генерируем shh
+  ** на локальном компьютере ** генерируем shh
   
     ssh-keygen -t rsa
   
-  на локальном компьютере отправляем ssh ключ на сервер
+  ** С локального компютера ** отправляем ssh ключ на сервер
   
     cat ~/.ssh/id_rsa.pub | ssh -p 4321 deployer@192.168.0.100 'cat >> /home/deployer/.ssh/authorized_keys'
   

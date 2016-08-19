@@ -159,6 +159,7 @@ Nginx
 -----
 
   (Опционально) Добавим немного swap памяти для надёжности
+  
     sudo dd if=/dev/zero of=/swap bs=1M count=1024
     
     sudo mkswap /swap

@@ -69,9 +69,7 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
 Update and upgrade
 ------------------
 
-    sudo apt-get update
-    sudo apt-get upgrade
-    sudo reboot
+    sudo apt-get update && sudo apt-get upgrade && sudo reboot
     
   после перезагрузки заходим на сервер под deployer
     ssh deployer@192.168.0.100 -p 4321
@@ -122,11 +120,11 @@ Update and upgrade
    
   устанавливаем ruby
     
-    rvm install 2.2.3
+    rvm install 2.3.1
   
   указываем что эта версия ruby будет использоваться по умолчанию
     
-    rvm use 2.2.3 --default
+    rvm use 2.3.1 --default
   
   проверяем версию ruby
     

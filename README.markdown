@@ -139,7 +139,7 @@ Update and upgrade
 
   устанавливаем PostgreSQL
   
-    sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-9.3
+    sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-9.5
   
   устанавливаем пароль для postgres
   
@@ -158,6 +158,13 @@ GIT
 Nginx
 -----
 
+  (Опционально) Добавим немного swap памяти для надёжности
+    sudo dd if=/dev/zero of=/swap bs=1M count=1024
+    
+    sudo mkswap /swap
+    
+    sudo swapon /swap
+    
   устанавливаем passenger + nginx
   
     gem install passenger

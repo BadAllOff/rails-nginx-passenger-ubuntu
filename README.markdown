@@ -190,7 +190,7 @@ Nginx
 
       server {
         listen 80;
-        server_name 192.168.0.100;
+        server_name write_domen_or_ip;
         root /home/deployer/qna/current/public;
         passenger_enabled on;
 
@@ -203,7 +203,7 @@ Nginx
 
   загружаем скрипт управления nginx
   
-    git clone https://github.com/sanyco86/rails-nginx-passenger-ubuntu.git
+    git clone https://github.com/BadAllOff/rails-nginx-passenger-ubuntu
   
   копируем скрипт
   
